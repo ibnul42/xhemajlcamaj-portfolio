@@ -6,10 +6,12 @@ import Footer from "./Footer";
 function Layout() {
   return (
     <div className="bg-[#223a5b]">
-      <div className="h-screen flex flex-col justify-between">
+      <div className="h-screen flex flex-col justify-between overflow-y-auto">
         <Header />
-        <Content />
-        <Footer />
+        <div className="flex flex-col justify-between h-[calc(100vh-100px)]">
+          <Content />
+          <Footer />
+        </div>
       </div>
     </div>
   );
