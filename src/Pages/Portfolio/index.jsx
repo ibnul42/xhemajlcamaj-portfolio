@@ -65,15 +65,15 @@ function Portfolio() {
       <div className="">
         <p className="text-2xl font-bold">Portfolio</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {portfolio.map((item, index) => (
           <div
             key={index}
-            class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            class="col-span-1 mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
           >
             <div className="h-44 flex justify-center items-center overflow-hidden">
               <img
-                className="rounded-t-lg w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105"
                 src={item.imageLink}
                 alt=""
               />
