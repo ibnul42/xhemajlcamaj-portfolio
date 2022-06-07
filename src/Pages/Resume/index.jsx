@@ -53,31 +53,32 @@ function Resume() {
       </div>
       <div className="my-2">
         <p className="text-2xl font-bold">Experience</p>
-        <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {experience.map((item, index) => (
-              <div className="col-span-1 grid grid-cols-1 md:grid-cols-2">
-                <div className="col-span-1 flex flex-col">
-                  <p className="font-semibold text-xl text-gray-400">
-                    {item.company}
-                  </p>
-                </div>
-                <div className="col-span-1 flex md:justify-end">
-                  <p>{item.duration}</p>
-                </div>
-                <div className="col-span-2">
-                  <p className="font-medium text-lg text-gray-500">
-                    {item.title}
-                  </p>
-                </div>
-                <ul className="list-disc list-inside col-span-2">
-                  {item.responsibilities.map((res, index) => (
-                    <li>{res.name}</li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {experience.map((item, index) => (
+            <div
+              key={index}
+              className="col-span-1 grid grid-cols-1 md:grid-cols-2"
+            >
+              <div className="col-span-1 flex flex-col">
+                <p className="font-semibold text-xl text-gray-400">
+                  {item.company}
+                </p>
               </div>
-            ))}
-          </div>
+              <div className="col-span-1 flex md:justify-end">
+                <p>{item.duration}</p>
+              </div>
+              <div className="col-span-2">
+                <p className="font-medium text-lg text-gray-500">
+                  {item.title}
+                </p>
+              </div>
+              <ul className="list-disc list-inside col-span-2">
+                {item.responsibilities.map((res, index) => (
+                  <li key={index}>{res.name}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
