@@ -45,7 +45,7 @@ export default function Header() {
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
                     alt="Workflow"
                   /> */}
-                  <p className="text-2xl font-bold">Lernantino</p>
+                  <p className="text-2xl font-bold">Xhemajl Camaj</p>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}

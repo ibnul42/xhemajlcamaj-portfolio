@@ -3,32 +3,28 @@ import { Link } from "react-router-dom";
 
 const portfolio = [
   {
-    title: "Project Title",
+    title: "Find A Pet",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta cum ut excepturi omnis necessitatibus optio tempora laborum mollitia animi",
-    imageLink:
-      "https://media.istockphoto.com/photos/closeup-focus-on-persons-hands-typing-on-the-desktop-computer-show-picture-id1356364268?b=1&k=20&m=1356364268&s=170667a&w=0&h=YibLOYYDkERhgK4BvRw3TzIlPYQAo4nbMnFA-5CvZ0k=",
-    liveLink: "http://github.com/",
-    gitLink: "https://github.com/",
+      "A website that allows users to search for a dog up for adoption in their area. The webite provides information for the dog inlcuding the breed, age, gender, and email contact. Users can also learn a random fact about dogs which is matched with a random picture of different dogs",
+    imageLink: "/assets/findpet.png",
+    liveLink: "https://sonnytedesco26.github.io/find-a-pet/",
+    gitLink: "https://github.com/sonnytedesco26/find-a-pet",
   },
 
   {
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta cum ut excepturi omnis necessitatibus optio tempora laborum mollitia animi",
-    imageLink:
-      "https://images.techopedia.com/images/uploads/istock-1173805290.jpeg?w=800&h=0&mode=max&quality=70&scale=both",
-    liveLink: "http://github.com/",
-    gitLink: "https://github.com/",
+    title: "Run Buddy",
+    description: "A website that offers fitness training services",
+    imageLink: "/assets/runbuddy.png",
+    liveLink: "https://lernantino.github.io/run-buddy/",
+    gitLink: "https://github.com/Xcamaj/run-buddy",
   },
   {
-    title: "Project Title",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta cum ut excepturi omnis necessitatibus optio tempora laborum mollitia animi",
+    title: "Taskmaster Pro",
+    description: "Taskmaster website that offers fitness training services",
     imageLink:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OVrQeGEry0g9Xm72XU3XHGaLn5s2NrkRBf3mye8iuR5Vd6lI_89_h_6iNAP8_TCYw_w&usqp=CAU",
     liveLink: "http://github.com/",
-    gitLink: "https://github.com/",
+    gitLink: "https://github.com/Xcamaj/taskmaster-pro",
   },
   {
     title: "Project Title",
@@ -84,7 +80,7 @@ function Portfolio() {
               </h5>
             </div>
             <div className="p-2 flex flex-col justify-between h-auto">
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 h-[70px] overflow-hidden after:content-['...']">
                 {item.description}
               </p>
               <div className="flex justify-around text">
